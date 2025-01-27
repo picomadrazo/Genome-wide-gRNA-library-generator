@@ -6,4 +6,4 @@ The starting material are genomic sequences (ORF & CDS catalogues) and the outpu
 Working example is _Aspergillus niger_ NRRL3.
 
 
-Created by Jun Lyu and Juan Pablo Morán Torres for Utrecht University Microbiology lab un der supervision of H. A. B. Wösten.
+Created by Jun Lyu and Juan Pablo Morán Torres for Utrecht University Microbiology lab under the supervision of H. A. B. Wösten.
