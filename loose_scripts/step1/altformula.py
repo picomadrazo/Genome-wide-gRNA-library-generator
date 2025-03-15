@@ -4,7 +4,12 @@ import re
 from Bio import SeqIO
 from Bio.Seq import Seq
 
-#---------------------------------------------------------------Preparing CDS fasta file. Unwraps
+#This step starts with a CDS catalogue and outpus all gRNA spacers that can introduce stop codons by
+#cytidine deaminase base editors in the first 2-10 nt of the spacer. The first number is a score (based on
+#the presence of homopolymer stretches, GC contentes and distance from start codon or stop codon (Sd)). The second number is Sd
+
+
+#---------------------------------------------------------------Preparing CDS fasta file. Unwraps and adds reverse complement in next gene entry
 
 def is_wrapped(fasta_file):
     """Check if the FASTA file contains wrapped sequences by looking for line breaks in sequence data."""
@@ -65,7 +70,7 @@ print(f"Original and reverse complement sequences added to {args.output}")
 
 
 
-#---------------------------------------------------------------Search for spacer candidates containing codons sensitive to introduction of stop condon by C->T transitions
+#---------------------------------------------------------------Searches for spacer candidates containing codons sensitive to introduction of stop condon by C->T transitions
 file = open(f"{input_basename}_with_antisense.fasta")
 lines =[]
 for l in file.readlines():
