@@ -12,7 +12,7 @@ from Bio.Seq import Seq
 #python3 altformula.py wrapped_glaA_CDS.fasta 
 
 
-#---------------------------------------------------------------Preparing CDS fasta file. Unwraps and adds reverse complement in next gene entry
+#---------------------------------------------------------------Preparing CDS fasta file. Unwraps and adds reverse complement as next gene entry
 
 def is_wrapped(fasta_file):
     """Check if the FASTA file contains wrapped sequences by looking for line breaks in sequence data."""
