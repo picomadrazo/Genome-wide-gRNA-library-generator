@@ -5,7 +5,7 @@ from Bio import SeqIO
 from Bio.Seq import Seq
 
 #This step starts with a CDS catalogue and outpus all gRNA spacers that can introduce stop codons by
-#cytidine deaminase base editors in the first 2-10 nt of the spacer. The first number is a score, based on
+#cytidine deaminase base editors. The conditions to be met are CGA, CAA, CAG, or -in the antisense- CCA codons within the 2-9 nt of the spacer. The first number is a score, based on
 #the presence of homopolymer stretches (shp), GC content (Sgc), and distance from start codon or stop codon (Sd)). The second number is Sd.
 
 #example of usage: 
