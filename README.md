@@ -3,7 +3,7 @@ Tool to generate genome-wide gRNA libraries for fungal genomes, compatible with 
 
 The starting materials are a genome assembly and the CDS catalogue. The script looks in the gene CDS for NGG spacers that contain CGA, CAA, CAG (or CCA in the antisense) codons in the first 2-9 nucelotides. These codons can efficiently transition into stop condons by the cytidine deaminase activity of popular base editors. The output is a .fasta file with a single spacer for each predicted gene. 
 
-Usage is:
+Usage:
 
       ./gRNA_library_pipeline.sh <GENOME_FASTA> <CDS_FASTA> <SPACER_LENGTH> <CUT_OFF>
 
