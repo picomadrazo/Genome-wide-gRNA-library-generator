@@ -5,17 +5,17 @@ The starting materials are a genome assembly and the CDS catalogue. The script l
 
 Usage is:
 
-./gRNA_library_pipeline.sh <GENOME_FASTA> <CDS_FASTA> <SPACER_LENGTH> <CUT_OFF>
+      ./gRNA_library_pipeline.sh <GENOME_FASTA> <CDS_FASTA> <SPACER_LENGTH> <CUT_OFF>
 
-      <GENOME_FASTA>  Genome assmebly file.
-      <CDS_FASTA>  Coding DNA sequence file, i.e. no introns.
-      <SPACER_LENGTH>  Desired spacer length. Recommended: 18 nt.
-      <CUT_OFF> From 0.0 to 1.0 Based on internal formula considering distance from the start codon, GC content, and presence of homopolymer tracts. Recommended: 0.7
+<GENOME_FASTA>  Genome assmebly file.
+<CDS_FASTA>  Coding DNA sequence file, i.e. no introns.
+<SPACER_LENGTH>  Desired spacer length. Recommended: 18 nt.
+<CUT_OFF> From 0.0 to 1.0 Based on internal formula considering distance from the start codon, GC content, and presence of homopolymer tracts. Recommended: 0.7
 
 Gather the. fasta files and bash script in a dedicated directory and run. Requires Bowtie 1 available in PATH. 
 
 Working example is _Aspergillus niger_ NRRL 3:
-./gRNA_library_pipeline.sh Aspni_NRRL3_1_AssemblyScaffolds.fasta Aspni_NRRL3_1_GeneCatalog_CDS_20140311.fasta 18 0.7
+      ./gRNA_library_pipeline.sh Aspni_NRRL3_1_AssemblyScaffolds.fasta Aspni_NRRL3_1_GeneCatalog_CDS_20140311.fasta 18 0.7
 
 
 Created by Jun Lyu and Juan Pablo Morán Torres for Utrecht University Microbiology lab under the supervision of H. A. B. Wösten.
