@@ -10,7 +10,7 @@ Usage:
             <GENOME_FASTA>  Genome assembly file.
             <CDS_FASTA>  Coding DNA sequence file, i.e. no introns.
             <SPACER_LENGTH>  Desired spacer length. Recommended: 18 nt.
-            <CUT_OFF> From 0.0 to 1.0. Spacer score based on internal formula considering distance from the start codon, GC content, and presence of homopolymer tracts. Recommended: 0.7
+            <CUT_OFF> From 0.0 to 1.0. Spacer score cut-off based on internal formula considering distance from the start codon, GC content, and presence of homopolymer tracts. Recommended: 0.7
 
 Gather the .fasta files and bash script in a dedicated directory and run. Requires Bowtie 1 available in PATH. 
 
