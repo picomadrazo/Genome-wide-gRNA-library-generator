@@ -12,7 +12,7 @@ Usage:
             <SPACER_LENGTH>  Desired spacer length. Recommended: 18 nt.
             <CUT_OFF> From 0.0 to 1.0. Spacer score cut-off based on internal formula considering distance from the start codon, GC content, and presence of homopolymer tracts. Recommended: 0.7
 
-Gather the .fasta files and bash script in a dedicated directory and run. Requires Bowtie 1 available in PATH. 
+Gather the .fasta files and contents of V2 in dedicated directory and run bash file. Requires Bowtie 1 available in PATH. 
 
 Working example is _Aspergillus niger_ NRRL 3:
 
