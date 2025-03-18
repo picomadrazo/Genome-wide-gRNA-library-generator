@@ -1,9 +1,10 @@
 # Genome-wide-gRNA-library generator
-Tool to generate genome-wide gRNA libraries for fungal genomes.
+Tool to generate genome-wide gRNA libraries for fungal genomes, compatible with cytidine deaminase base editors. 
 
-The starting material are genomic sequences (genome assembly & CDS catalogues) and the output is a .fasta file with a single spacer for each predicted gene. 
+The starting material are a genome assembly and the CDS catalogue. The script looks in the gene CDS for NGG spacers that contain CGA, CAA, CAG (or CCA in the antisense) codons in the first 2-9 nucelotides. These codons can efficiently transition into stop condons by the cytidine deaminase activity of popular base editors. The output is a .fasta file with a single spacer for each predicted gene. 
 
-Usage is
+Usage is:
+
 ./gRNA_library_pipeline.sh <GENOME_FASTA> <CDS_FASTA> <SPACER_LENGTH> <CUT_OFF>
   <GENOME_FASTA>  Genome assmebly file.
   <CDS_FASTA>  Coding DNA sequence file, i.e. no introns.
