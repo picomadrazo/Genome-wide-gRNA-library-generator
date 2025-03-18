@@ -15,6 +15,7 @@ Usage is:
 Gather the. fasta files and bash script in a dedicated directory and run. Requires Bowtie 1 available in PATH. 
 
 Working example is _Aspergillus niger_ NRRL 3:
+
       ./gRNA_library_pipeline.sh Aspni_NRRL3_1_AssemblyScaffolds.fasta Aspni_NRRL3_1_GeneCatalog_CDS_20140311.fasta 18 0.7
 
 
